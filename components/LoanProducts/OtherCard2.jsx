@@ -1,10 +1,10 @@
-import { rent } from "@/assets/images/exporter";
+import { building } from "@/assets/images/exporter";
 import { ArrowRight, CheckCircle, Info } from "lucide-react";
 import Image from "next/image";
 
-const OtherCard1 = () => {
+const OtherCard2 = () => {
   return (
-    <div className="w-[447px] flex flex-col items-center justify-between rounded-[20px] p-10 pt-5 pb-10 bg-white opacity-100 shadow-[0_10px_50px_0_rgba(0,0,0,0.4)] relative overflow-hidden">
+    <div className="w-full max-w-[447px] min-w-[446px] flex flex-col items-center justify-between rounded-[20px] p-10 pt-5 pb-10 bg-white opacity-100 shadow-[0_10px_50px_0_rgba(0,0,0,0.4)] relative overflow-hidden">
       {/* Top angled background */}
       <div
         className="absolute top-0 left-0 w-[489px] h-[40px] bg-[#165831] opacity-100 z-0"
@@ -28,15 +28,20 @@ const OtherCard1 = () => {
       />
 
       <div className="bg-[#165831] rounded-[24px] p-8 mb-8 flex items-center justify-center z-10">
-        <Image src={rent} alt="Rental Property" width={80} height={80} />
+        <Image
+          src={building}
+          alt="Ground Up Construction"
+          width={80}
+          height={80}
+        />
       </div>
 
       <h2 className="text-[#165831] font-inter font-semibold text-[32px] leading-[100%] tracking-[0px] text-center m-0 z-10">
-        Rental Property
+        Ground Up Construction
       </h2>
 
       <div className="text-[#165831] text-[16px] font-inter font-medium leading-[100%] tracking-[0px] mb-7 mt-2 text-center z-10">
-        30 Year DSCR loans in Florida and Texas
+        Ground Up Construction loans in Florida and Texas
       </div>
 
       <ul className="text-[#165831] font-inter text-[16px] font-medium leading-[100%] tracking-[0px] list-none p-0 m-0 mb-7 w-full z-10">
@@ -45,14 +50,14 @@ const OtherCard1 = () => {
             className="text-[#165831] mr-3 w-6 h-6"
             strokeWidth={2.2}
           />
-          Up to $1,500,000
+          Up to $3,500,000
         </li>
         <li className="flex items-center mb-3">
           <CheckCircle
             className="text-[#165831] mr-3 w-6 h-6"
             strokeWidth={2.2}
           />
-          Interest Rate 6.75%-8.25%
+          Interest Rate 11.25%-13.25%
         </li>
         <li className="flex items-center mb-3">
           <CheckCircle
@@ -66,7 +71,7 @@ const OtherCard1 = () => {
             className="text-[#165831] mr-3 w-6 h-6"
             strokeWidth={2.2}
           />
-          Up to 85% of LTV
+          Up to 80% of LTC
         </li>
       </ul>
 
@@ -97,4 +102,4 @@ const OtherCard1 = () => {
   );
 };
 
-export default OtherCard1;
+export default OtherCard2;
