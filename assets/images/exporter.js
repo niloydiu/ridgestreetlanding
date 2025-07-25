@@ -11,6 +11,7 @@ const project = "/project.jpg";
 const resource1 = "/resource1.jpg";
 const resource2 = "/resource2.jpg";
 const resource3 = "/resource3.jpg";
+const usa = "/usa.png";
 
 export {
   building,
@@ -26,4 +27,5 @@ export {
   resource2,
   resource3,
   texas,
+  usa,
 };

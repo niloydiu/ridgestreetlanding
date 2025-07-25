@@ -1,6 +1,7 @@
 const BlankDiv = () => {
   return (
     <div
+      className="mx-auto"
       style={{
         width: 1728,
         height: 1000,

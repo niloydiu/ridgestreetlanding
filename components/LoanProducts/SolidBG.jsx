@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const SolidBG = () => {
   return (
-    <div className="w-[447px] flex flex-col items-center justify-between rounded-[20px] p-10 pt-5 pb-10 bg-[#165831] opacity-100 shadow-[0_10px_50px_0_rgba(0,0,0,0.4)] relative">
+    <div className="w-[447px] flex flex-col items-center justify-between rounded-[20px] p-6 pt-5 pb-8 bg-[#165831] opacity-100 shadow-[0_10px_50px_0_rgba(0,0,0,0.4)] relative">
       <div className="bg-white rounded-[24px] p-8 mb-8 flex items-center justify-center">
         <Image
           src={home}
@@ -48,13 +48,13 @@ const SolidBG = () => {
         </a>
       </div>
       <div className="w-full flex justify-center mt-auto">
-        <button className="w-[370px] h-[64px] bg-white text-[#165831] font-inter font-semibold text-[19.43px] leading-[100%] tracking-[0px] uppercase border-none rounded-[12px] flex items-center justify-between px-8 shadow-[0_2px_8px_0_rgba(24,91,55,0.10)] transition hover:bg-gray-100">
+        <button className="w-full max-w-[240px] h-[52px] bg-white text-[#165831] font-inter font-semibold text-[17px] leading-[100%] tracking-[0px] uppercase border-none rounded-[12px] flex items-center justify-between px-6 shadow-[0_2px_8px_0_rgba(24,91,55,0.10)] transition hover:bg-gray-100">
           <span>GET APPROVED ONLINE</span>
           <span
-            className="ml-4 text-[32px] bg-[#165831] text-white rounded-[8px] flex items-center justify-center w-[48px] h-[48px] border-2 border-[#165831]"
+            className="ml-4 text-[24px] bg-[#165831] text-white rounded-[8px] flex items-center justify-center w-[36px] h-[36px] border-2 border-[#165831]"
             style={{ boxSizing: "border-box" }}
           >
-            <ArrowRight className="w-5 h-5" />
+            <ArrowRight className="w-4 h-4" />
           </span>
         </button>
       </div>

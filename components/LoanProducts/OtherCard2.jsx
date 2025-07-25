@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const OtherCard2 = () => {
   return (
-    <div className="w-full max-w-[447px] min-w-[446px] flex flex-col items-center justify-between rounded-[20px] p-10 pt-5 pb-10 bg-white opacity-100 shadow-[0_10px_50px_0_rgba(0,0,0,0.4)] relative overflow-hidden">
+    <div className="w-[447px] flex flex-col items-center justify-between rounded-[20px] p-6 pt-5 pb-8 bg-white opacity-100 shadow-[0_10px_50px_0_rgba(0,0,0,0.4)] relative overflow-hidden">
       {/* Top angled background */}
       <div
         className="absolute top-0 left-0 w-[489px] h-[40px] bg-[#165831] opacity-100 z-0"
@@ -86,13 +86,13 @@ const OtherCard2 = () => {
       </div>
 
       <div className="w-full flex justify-center mt-auto z-10">
-        <button className="w-[370px] h-[64px] bg-[#165831] text-white font-inter font-semibold text-[19.43px] leading-[100%] tracking-[0px] uppercase border-none rounded-[12px] flex items-center justify-between px-8 shadow-[0_2px_8px_0_rgba(24,91,55,0.10)] transition hover:bg-[#124526]">
+        <button className="w-full max-w-[240px] h-[52px] bg-[#165831] text-white font-inter font-semibold text-[17px] leading-[100%] tracking-[0px] uppercase border-none rounded-[12px] flex items-center justify-between px-6 shadow-[0_2px_8px_0_rgba(24,91,55,0.10)] transition hover:bg-[#124526]">
           <span>GET APPROVED ONLINE</span>
           <div className="flex items-center justify-center ml-4">
-            <div className="bg-white rounded-[8px] flex items-center justify-center w-[48px] h-[48px]">
+            <div className="bg-white rounded-[8px] flex items-center justify-center w-[36px] h-[36px]">
               <ArrowRight
-                className="text-[#165831] w-7 h-7"
-                strokeWidth={2.5}
+                className="text-[#165831] w-5 h-5"
+                strokeWidth={2.2}
               />
             </div>
           </div>

@@ -8,7 +8,7 @@ const raleway = Raleway({ subsets: ["latin"], weight: ["700"] });
 const Florida = () => {
   return (
     <div
-      className="w-[440px] h-[560px] border-2 border-solid relative overflow-hidden"
+      className="w-[440px] h-[560px] border-2 border-solid border-white relative overflow-hidden"
       style={{
         borderTopLeftRadius: "60px", // Changed from top-right to top-left
         borderBottomRightRadius: "60px", // Changed from bottom-left to bottom-right

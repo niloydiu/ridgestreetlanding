@@ -8,6 +8,7 @@ const ClientReviewCard = ({
   name = "Name Here",
   subtitle = "What an amazing experience",
   review = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor ex ut turpis congue, a accumsan elit ultricies. Vivamus sit amet ligula at libero ullamcorper fringilla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer euismod libero eu quam efficitur, a elementum sem fermentum. Fusce vel ante vel ex cursus.",
+  imageClassName,
 }) => {
   return (
     <div
@@ -24,7 +25,7 @@ const ClientReviewCard = ({
           alt={name}
           width={140}
           height={140}
-          className="object-cover"
+          className={imageClassName ? imageClassName : "object-cover"}
           priority
         />
       </div>

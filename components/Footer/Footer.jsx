@@ -9,12 +9,12 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-[#1B5631] text-white font-['Inter'] py-10 px-6 md:px-20">
-      <div className="grid grid-cols-1 md:grid-cols-5 gap-10 text-[20px] leading-[168%]">
+    <footer className="bg-[#1B5631] text-white font-['Inter'] py-10 px-6 w-full">
+      <div className="max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 text-[20px] leading-[168%]">
         {/* Column 1: Company + Where We Lend */}
         <div>
           <h3 className="text-[24px] font-bold leading-[33px] mb-2">Company</h3>
-          <ul>
+          <ul className="mb-2">
             <li>About</li>
             <li>Fix And Flip Loans</li>
             <li>DSCR Rental Loans</li>
@@ -33,7 +33,7 @@ const Footer = () => {
         {/* Column 2: Top Cities */}
         <div>
           <h3 className="text-[24px] font-bold leading-[33px] mb-2">
-            Top Cites We Lend In
+            Top Cities We Lend In
           </h3>
           <ul>
             <li>Orlando</li>
@@ -69,32 +69,37 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Column 4: Contact */}
-        <div>
-          <h3 className="text-[24px] font-bold leading-[33px] mb-2">
-            Contact Us
-          </h3>
-          <div className="flex items-start gap-2 mb-2">
-            <Mail className="w-6 h-6 mt-1" />
-            <span>loans@ridgestreetcap.com</span>
-          </div>
-          <div className="flex items-start gap-2">
-            <Phone className="w-6 h-6 mt-1" />
-            <span>Phone: 786-304-2751</span>
+        {/* Column 4: Contact, Logo, Social */}
+        <div className="flex flex-col h-full justify-between">
+          <div>
+            <h3 className="text-[24px] font-bold leading-[33px] mb-2">
+              Contact Us
+            </h3>
+            <div className="flex items-start gap-2 mb-2">
+              <Mail className="w-6 h-6 mt-1" />
+              <span>loans@ridgestreetcap.com</span>
+            </div>
+            <div className="mt-4 mb-1 text-[18px] font-semibold">
+              Direct/Text
+            </div>
+            <div className="flex items-start gap-2">
+              <Phone className="w-6 h-6 mt-1" />
+              <span>Phone: 786-304-2751</span>
+            </div>
           </div>
 
           {/* Logo */}
-          <div className="bg-white text-[#1B5631] font-bold text-[24px] rounded-xl px-6 py-3 mt-6 inline-block">
+          <div className="bg-white text-[#1B5631] font-bold text-[24px] rounded-xl px-8 py-3 mt-8 inline-block w-fit">
             <span className="text-[#1B5631]">RIDGE</span>{" "}
             <span className="text-gray-500">STREET</span>
           </div>
 
           {/* Social Icons */}
-          <div className="flex gap-4 mt-6 text-white">
-            <Linkedin className="w-6 h-6 bg-white text-[#1B5631] p-1 rounded" />
-            <Facebook className="w-6 h-6 bg-white text-[#1B5631] p-1 rounded" />
-            <Twitter className="w-6 h-6 bg-white text-[#1B5631] p-1 rounded" />
-            <Instagram className="w-6 h-6 bg-white text-[#1B5631] p-1 rounded" />
+          <div className="flex gap-4 mt-8 text-white">
+            <Linkedin className="w-8 h-8 bg-white text-[#1B5631] p-1 rounded" />
+            <Facebook className="w-8 h-8 bg-white text-[#1B5631] p-1 rounded" />
+            <Twitter className="w-8 h-8 bg-white text-[#1B5631] p-1 rounded" />
+            <Instagram className="w-8 h-8 bg-white text-[#1B5631] p-1 rounded" />
           </div>
         </div>
       </div>
